@@ -1,0 +1,153 @@
+.container, .back{
+    width: 100%;
+    height: 290px;
+    border: 1px solid #012;
+    border-radius: 20px;
+    background: linear-gradient(#012, #214);
+    color: #cdb;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.back{
+    background: linear-gradient(#214, #012);
+}
+.container .top,
+.container .number{
+    width: 95%;
+    margin: 5% auto;
+    display: flex;
+}
+
+.container .top .left, 
+.container .top .right{
+    width: 50%;
+    padding: 0 5%;
+}
+.container .top .right{
+    text-align: right;
+}
+.container .top .left img{
+    margin-top: -5%;
+    margin-left: -10%;
+    width: 40%;
+    height: 120%;
+}
+.container .number{
+    margin-top: 10%;
+    justify-content: center;
+}
+.container .number .num{
+    width:  20%;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 700;
+    line-height: 90%;
+}
+.container .details{
+    margin-top: -5% ;
+    display: flex;
+}
+.container .details .holder,
+.container .details .expires{
+    width: 47%;
+    margin: 10% 5%;
+}
+.container .details .expires{
+    text-align: right;
+}
+.container .details .expires .title, 
+.container .details .holder .title{
+    font-size: xx-small;
+    font-weight: 100;
+}
+.back .black{
+    width: 100%;
+    height: 18%;
+    background-color: #000;
+    margin-top: 5%;
+}
+.input{
+    width: 95%;
+    height: 18%;
+    background-color: #000;
+    margin: 7% auto;
+    border-radius: 10px;
+}
+.input input{
+    width: 100%;
+    height: 99%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: right;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 50%;
+  height: 290px;
+  margin: 5% auto;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s linear;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.container, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.back {
+  transform: rotateY(180deg);
+}
